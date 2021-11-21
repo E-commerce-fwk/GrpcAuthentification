@@ -1,0 +1,24 @@
+***************GRPC & SPRINGBOOT*********************
+
+gRPC-spring-boot-starter combines google’s open-source high performance RPC-framework with spring boot’s ease of setup. This project simplifies the gRPC-server/client setup to adding one dependency to your project and adding a single annotation to your service class / client (stub) field. The features of this library are meant to complement your experience with gRPC and still allow you to do any customization you need for your project.
+***************GRPC & kafka**************************
+
+While Kafka was capable of efficiently channeling incoming events in near real-time from a variety of sensors that were used in select Wework spaces, the downstream gRPC services that were user-facing were exceptionally good at serving requests in a concurrent and robust manner. This was a formidable combination, if only there was a way to effectively bridge these two in an optimized way. Luckily, sink Connectors came to the rescue. However, there weren't any for gRPC sinks! So we wrote one.
+
+https://www.confluent.io/resources/kafka-summit-2020/creating-connector-to-bridge-the-worlds-of-kafka-and-grpc-at-wework/
+
+***************GRPC & Istio**************************
+
+While gRPC supports some networking use cases like TLS and client-side load balancing, adding Istio to a gRPC architecture can be useful for collecting telemetry, adding traffic rules, and setting RPC-level authorization. Istio can also provide a useful management layer if your traffic is a mix of HTTP, TCP, gRPC, and database protocols, because you can use the same Istio APIs for all traffic types.
+
+https://istiobyexample.dev/grpc/
+
+***************GRPC & Flink**************************
+Flink connector use 
+https://github.com/apache/flink/tree/master/flink-connectors/flink-connector-gcp-pubsub
+
+***************GRPC & Quarkus**************************
+
+Supersonic, Subatomic, Java to the rescue. Quarkus is an optimized Java stack crafted from best-of-breed libraries and standards and tailored for OpenJDK HotSpot and GraalVM. Support for gRPC was introduced to Quarkus in version 1.5. As you'll see, Quarkus makes it really easy to implement and consume gRPC services.
+
+https://developers.redhat.com/blog/2020/12/23/supersonic-subatomic-grpc-services-with-java-and-quarkus#choosing_the_right_framework 
